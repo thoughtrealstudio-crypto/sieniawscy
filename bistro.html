@@ -80,6 +80,13 @@
                     </div>
                     <span class="price">20zł</span>
                 </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Rosół</h3>
+                        <p>Tradycyjna zupa na wywarze z kury z makaronem</p>
+                    </div>
+                    <span class="price">20zł</span>
+                </div>
             </div>
         </div>
 
@@ -116,6 +123,20 @@
                     <div class="item-info">
                         <h3>Sok Tłoczony 0,3l</h3>
                         <p>Jabłkowy, Truskawkowy, Gruszkowy, Rabarbarowy</p>
+                    </div>
+                    <span class="price">10zł</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Kompot</h3>
+                        <p>Cieplutki, z sezonowych owoców</p>
+                    </div>
+                    <span class="price">10zł</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Miód pitny</h3>
+                        <p>Tradycyjny napój alkoholowy na bazie miodu</p>
                     </div>
                     <span class="price">10zł</span>
                 </div>
@@ -184,8 +205,8 @@
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (navLinks.classList.contains('active') && 
-                !navLinks.contains(e.target) && 
+            if (navLinks.classList.contains('active') &&
+                !navLinks.contains(e.target) &&
                 !hamburger.contains(e.target)) {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
